@@ -22,8 +22,12 @@ public class SpringAiBasicsApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
+        LOGGER.info("Asking a question");
+        String answer = businessService.askQuestion("Tell me a programming joke");
+        LOGGER.info("Response from the AI:\n{}", answer);
+
         LOGGER.info("Telling a joke");
-        String joke = businessService.askQuestion("Tell me a programming joke");
+        String joke = businessService.tellJoke("programming");
         LOGGER.info("Response from the AI:\n{}", joke);
     }
 }
