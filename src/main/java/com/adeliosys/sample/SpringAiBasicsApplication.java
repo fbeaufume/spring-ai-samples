@@ -8,6 +8,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.util.function.Supplier;
+
 @SpringBootApplication
 public class SpringAiBasicsApplication implements CommandLineRunner {
 
@@ -22,12 +24,15 @@ public class SpringAiBasicsApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-        LOGGER.info("Asking a question");
-        String answer = businessService.askQuestion("Tell me a programming joke");
-        LOGGER.info("Response from the AI:\n{}", answer);
+        execute("Asking a question", () -> businessService.askQuestion("Tell me a programming joke"));
 
-        LOGGER.info("Telling a joke");
-        String joke = businessService.tellJoke("programming");
-        LOGGER.info("Response from the AI:\n{}", joke);
+        execute("Telling a joke", () -> businessService.tellJoke("programming"));
+
+        execute("Listing the most populated countries", businessService::getMostPopulatedCountries);
+    }
+
+    private void execute(String requestDescription, Supplier<Object> supplier) {
+        LOGGER.info(requestDescription);
+        LOGGER.info("Response from the AI:\n{}", supplier.get());
     }
 }
