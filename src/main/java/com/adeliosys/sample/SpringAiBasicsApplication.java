@@ -28,6 +28,8 @@ public class SpringAiBasicsApplication implements CommandLineRunner {
 
         execute("Telling a joke", () -> businessService.tellJoke("programming"));
 
+        execute("Choosing the right hero", businessService::chooseHero);
+
         execute("Listing the most populated countries", businessService::getMostPopulatedCountries);
     }
 
