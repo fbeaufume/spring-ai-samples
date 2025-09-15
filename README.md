@@ -1,6 +1,6 @@
 # Spring AI Basics
 
-This application shows how to get started with Spring AI and Ollama.
+This application shows how to get started with Spring AI 1.0 and Ollama.
 
 It is implemented in Java with Spring Boot, and takes the form of a simple command line application.
 
@@ -11,3 +11,11 @@ Of course, other LLMs can be used. To do so, update accordingly the starter in t
 and the configuration in `application.properties`.
 
 Start the application with `mvnw spring-boot:run` or from your IDE.
+
+Notable source files:
+
+- `pom.xml` declares the dependency management for Spring AI as well as the right starters.
+- `application.properties` contains the configuration for Spring AI and Ollama.
+- `AiConfig.java` defines the AI beans used by other components.
+- `BusinessService.java` uses the LLM to implement various tasks.
+- `SpringAiBAsicsApplication.java` is the main class and calls the methods from `BusinessService`.
