@@ -1,6 +1,7 @@
 # Spring AI Basics
 
-This application shows how to get started with Spring AI 1.0 and Ollama.
+This repository is a sample application for my
+[Getting started with Spring AI](https://www.adeliosys.fr/articles/spring-ai-basics/) article.
 
 It is implemented in Java with Spring Boot, and takes the form of a simple command line application.
 
