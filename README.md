@@ -5,11 +5,14 @@ This repository is a sample application for my
 
 It is implemented in Java with Spring Boot, and takes the form of a simple command line application.
 
-It requires Ollama with the Llama 3.1 model, so first install Ollama then run `ollama pull llama3.1:8b`
+By default, it requires Ollama with the Llama 3.1 model, so first install Ollama then run `ollama pull llama3.1:8b`
 to install the model.
 
-Of course, other LLMs can be used. To do so, update accordingly the starter in the `pom.xml` file
-and the configuration in `application.properties`.
+If you want to use another Ollama model, update `application.properties`. I added some examples.
+
+If you want to use another LLM provider (OpenAI, Mistral, etc.) use the right starter in `pom.xml`,
+then declare the specific configuration (such as the API key) in `application.properties`.
+See [Spring AI reference documentation](https://docs.spring.io/spring-ai/reference/) for more details.
 
 Start the application with `mvnw spring-boot:run` or from your IDE.
 
