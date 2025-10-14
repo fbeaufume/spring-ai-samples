@@ -1,9 +1,9 @@
 # Spring AI Basics
 
-This repository is a sample application for my
+This folder contains a sample application for my
 [Getting started with Spring AI](https://www.adeliosys.fr/articles/spring-ai-basics/) article.
 
-It is implemented in Java with Spring Boot, and takes the form of a simple command line application.
+It is implemented in Java with Spring Boot and Spring AI, and takes the form of a simple command line application.
 
 By default, it requires Ollama with the Llama 3.1 model, so first install Ollama then run `ollama pull llama3.1:8b`
 to install the model.
@@ -18,8 +18,12 @@ Start the application with `mvnw spring-boot:run` or from your IDE.
 
 Notable source files:
 
-- `pom.xml` declares the dependency management for Spring AI as well as the right starters.
-- `application.properties` contains the configuration for Spring AI and Ollama.
-- `AiConfig.java` defines the AI beans used by other components.
-- `BusinessService.java` uses the LLM to implement various tasks.
-- `SpringAiBAsicsApplication.java` is the main class and calls the methods from `BusinessService`.
+- [pom.xml](pom.xml) declares the dependency management for Spring AI as well as the right starters.
+- [application.properties](src/main/resources/application.properties) contains the configuration for Spring AI
+  and Ollama.
+- [AiConfig.java](src/main/java/com/adeliosys/sample/config/AiConfig.java) defines the AI beans used
+  by other components.
+- [BusinessService.java](src/main/java/com/adeliosys/sample/service/BusinessService.java) uses the LLM
+  to implement various tasks.
+- [SpringAiBAsicsApplication.java](src/main/java/com/adeliosys/sample/SpringAiBasicsApplication.java)
+  is the main class and calls the methods from `BusinessService`.
