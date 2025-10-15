@@ -40,12 +40,17 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!-- This dependency brings Spring AI with Ollama support -->
-        <!-- There are other starters for other LLM providers (OpenAI, etc.) -->
+        <!-- Uncomment one starter to choose your LLM service provider -->
+        <!-- Starter for Ollama -->
         <dependency>
             <groupId>org.springframework.ai</groupId>
             <artifactId>spring-ai-starter-model-ollama</artifactId>
         </dependency>
+        <!-- Starter for OpenAI or compatible LLM providers such as OpenRouter -->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.ai</groupId>-->
+<!--            <artifactId>spring-ai-starter-model-openai</artifactId>-->
+<!--        </dependency>-->
     </dependencies>
 
     <build>

@@ -37,12 +37,17 @@
     <dependencies>
         <!-- This is a command line application, so we do not use the web starter -->
 
-        <!-- This dependency brings Spring AI with Ollama support -->
-        <!-- There are other starters for other LLM providers (OpenAI, etc.) -->
+        <!-- Uncomment one starter to choose your LLM service provider -->
+        <!-- Starter for Ollama -->
         <dependency>
             <groupId>org.springframework.ai</groupId>
             <artifactId>spring-ai-starter-model-ollama</artifactId>
         </dependency>
+        <!-- Starter for OpenAI or compatible LLM providers such as OpenRouter -->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.ai</groupId>-->
+<!--            <artifactId>spring-ai-starter-model-openai</artifactId>-->
+<!--        </dependency>-->
 
         <!-- This library is used to parse various document types (PDF, doc/docx, HTML, etc.) -->
         <dependency>
