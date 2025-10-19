@@ -1,0 +1,21 @@
+meta {
+  name: Chat
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://localhost:8080/chat?conversation=12345&request=Tell me a programming joke
+  body: none
+  auth: inherit
+}
+
+params:query {
+  conversation: 12345
+  request: Tell me a programming joke
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

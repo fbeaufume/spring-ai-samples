@@ -16,7 +16,7 @@ See [Spring AI reference documentation](https://docs.spring.io/spring-ai/referen
 
 Start the application with `mvnw spring-boot:run` or from your IDE.
 
-Notable source files:
+Notable source files and folders:
 
 - [pom.xml](pom.xml) declares the dependency management for Spring AI as well as the right starters.
 - [application.properties](src/main/resources/application.properties) contains the configuration for Spring AI
@@ -25,3 +25,4 @@ Notable source files:
   by other components.
 - [ChatController.java](src/main/java/com/adeliosys/sample/api/ChatController.java) exposes the chat endpoint.
 - [index.html](src/main/resources/static/index.html) is the UI.
+- [bruno](bruno) this folder contains a Bruno collection for the chatbot endpoints (chat, manage conversations).

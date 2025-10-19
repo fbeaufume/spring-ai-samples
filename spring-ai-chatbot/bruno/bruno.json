@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Spring AI Chatbot",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
