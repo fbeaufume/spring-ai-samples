@@ -35,15 +35,27 @@ public class SpringAiBasicsApplication implements CommandLineRunner {
 
         execute("Listing the most populated countries", businessService::getMostPopulatedCountries);
 
-        LOGGER.info("Done in {} seconds", String.format(Locale.US, "%.3f", (System.currentTimeMillis() - timestamp) / 1000.0));
+        LOGGER.info("Done in {} seconds", formatDuration(timestamp));
     }
 
+    /**
+     * Log the execution of an LLM call.
+     */
     private void execute(String requestDescription, Supplier<Object> supplier) {
         try {
+            long timestamp = System.currentTimeMillis();
             LOGGER.info(requestDescription);
-            LOGGER.info("Response from the AI:\n{}", supplier.get());
+            Object response = supplier.get();
+            LOGGER.info("Response from the AI in {} seconds:\n{}", formatDuration(timestamp), response);
         } catch (Exception e) {
             LOGGER.warn("Error during the request", e);
         }
+    }
+
+    /**
+     * Format in seconds the duration from a timestamp, e.g. '3.274'.
+     */
+    private String formatDuration(long timestamp) {
+        return String.format(Locale.US, "%.3f", (System.currentTimeMillis() - timestamp) / 1000.0);
     }
 }
