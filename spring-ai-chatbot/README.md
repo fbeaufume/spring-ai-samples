@@ -24,5 +24,9 @@ Notable source files and folders:
 - [AiConfig.java](src/main/java/com/adeliosys/sample/config/AiConfig.java) defines the AI beans used
   by other components.
 - [ChatController.java](src/main/java/com/adeliosys/sample/api/ChatController.java) exposes the chat endpoint.
+- [ConversationController.java](src/main/java/com/adeliosys/sample/api/ConversationController.java) exposes the
+  endpoints to manage the persisted conversations.
+- [WeatherService.java](src/main/java/com/adeliosys/sample/service/WeatherService.java) is a sample business service
+  used as a tool by the LLM to get weather information.
 - [index.html](src/main/resources/static/index.html) is the UI.
 - [bruno](bruno) this folder contains a Bruno collection for the chatbot endpoints (chat, manage conversations).
