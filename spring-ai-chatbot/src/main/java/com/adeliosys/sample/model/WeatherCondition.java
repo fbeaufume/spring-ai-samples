@@ -6,8 +6,7 @@ public enum WeatherCondition {
     SUNNY,
     CLOUDY,
     RAINY,
-    STORMY,
-    SNOWY;
+    STORMY;
 
     public static WeatherCondition random() {
         WeatherCondition[] vals = values();

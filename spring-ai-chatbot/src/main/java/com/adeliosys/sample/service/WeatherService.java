@@ -15,7 +15,7 @@ public class WeatherService {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(WeatherService.class);
 
-    @Tool(name = "get_weather", description = "Return the current weather report for a given city including the condition and temperature in celsius.")
+    @Tool(description = "Return the current weather report for a given city including the condition and temperature in celsius.")
     public WeatherReport getCurrentWeather(@ToolParam(description = "The name of the city") String city) {
         // The current implementation returns a random report
         WeatherReport report = new WeatherReport(
