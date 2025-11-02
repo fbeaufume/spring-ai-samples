@@ -5,6 +5,8 @@ This folder contains a basic chatbot sample application.
 It is implemented in Java with Spring Boot and Spring AI, and takes the form of a web application.
 The UI is a simple HTML page provided by this application.
 
+![Chatbot UI](doc/chatbot-ui.png)
+
 By default, it requires Ollama with the Llama 3.1 model, so first install Ollama then run `ollama pull llama3.1:8b`
 to install the model.
 
