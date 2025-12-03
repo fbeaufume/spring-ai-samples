@@ -1,7 +1,7 @@
 # Spring AI Basics
 
 This folder contains a sample application for my
-[Getting started with Spring AI](https://www.adeliosys.fr/articles/spring-ai-basics/) article.
+[Getting started with Spring AI](https://beaufume.fr/articles/spring-ai-basics/) article.
 
 It is implemented in Java with Spring Boot and Spring AI, and takes the form of a simple command line application.
 

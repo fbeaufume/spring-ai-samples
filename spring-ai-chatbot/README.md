@@ -1,7 +1,7 @@
 # Spring AI Chatbot
 
 This folder contains a basic chatbot sample application for my
-[Chatbot with Spring AI](https://www.adeliosys.fr/articles/spring-ai-chatbot/) article.
+[Chatbot with Spring AI](https://beaufume.fr/articles/spring-ai-chatbot/) article.
 
 It is implemented in Java with Spring Boot and Spring AI, and takes the form of a web application.
 The UI is a simple HTML page provided by this application.
