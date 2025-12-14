@@ -22,8 +22,7 @@ Start the application with `mvnw spring-boot:run` or from your IDE.
 Notable source files and folders:
 
 - [pom.xml](pom.xml) declares the dependency management for Spring AI as well as the right starters.
-- [application.properties](src/main/resources/application.properties) contains the configuration for Spring AI
-  and Ollama.
+- [application.properties](src/main/resources/application.properties) contains the configuration for Spring AI.
 - [AiConfig.java](src/main/java/com/adeliosys/sample/config/AiConfig.java) defines the AI beans used
   by other components.
 - [ChatController.java](src/main/java/com/adeliosys/sample/api/ChatController.java) exposes the chat endpoint.

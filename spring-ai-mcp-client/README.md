@@ -1,7 +1,6 @@
-# Spring AI Basics
+# Spring AI MCP Client
 
-This folder contains a sample application for my
-[Getting started with Spring AI](https://beaufume.fr/articles/spring-ai-basics/) article.
+This folder contains a basic MCP client sample application.
 
 It is implemented in Java with Spring Boot and Spring AI, and takes the form of a command line application.
 
@@ -20,9 +19,5 @@ Notable source files:
 
 - [pom.xml](pom.xml) declares the dependency management for Spring AI as well as the right starters.
 - [application.properties](src/main/resources/application.properties) contains the configuration for Spring AI.
-- [AiConfig.java](src/main/java/com/adeliosys/sample/config/AiConfig.java) defines the AI beans used
-  by other components.
-- [BusinessService.java](src/main/java/com/adeliosys/sample/service/BusinessService.java) uses the LLM
-  to implement various tasks.
-- [SpringAiBasicsApplication.java](src/main/java/com/adeliosys/sample/SpringAiBasicsApplication.java)
+- [SpringAiMcpClientApplication.java](src/main/java/com/adeliosys/sample/SpringAiMcpClientApplication.java)
   is the main class and calls the methods from `BusinessService`.

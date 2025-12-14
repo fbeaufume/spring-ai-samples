@@ -21,3 +21,15 @@ It contains a basic chatbot sample application. It also shows how to use functio
 See article and dedicated `README.md` for additional information.
 
 ![Chatbot UI](spring-ai-chatbot/doc/chatbot-ui.png)
+
+## spring-ai-mcp-server
+
+`spring-ai-mcp-server` folder contains a sample MCP server application.
+
+See dedicated `README.md` for additional information.
+
+## spring-ai-mcp-client
+
+`spring-ai-mcp-client` folder contains a sample MCP client application.
+
+See dedicated `README.md` for additional information.
