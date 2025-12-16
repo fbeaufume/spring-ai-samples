@@ -1,6 +1,7 @@
 # Spring AI MCP Client
 
-This folder contains a basic MCP client sample application.
+This folder contains a basic MCP client sample application for my
+[MCP with Spring AI](https://beaufume.fr/articles/spring-ai-mcp/) article.
 
 It is implemented in Java with Spring Boot and Spring AI, and takes the form of a command line application.
 
